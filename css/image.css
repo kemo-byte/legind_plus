@@ -1,9 +1,12 @@
 /* Image style */
 #scrollUp {
     background-image: url("../img/top.png");
-    bottom: 30px;
+    bottom: 10px;
     right: 20px;
     width: 38px;    /* Width of image */
     height: 38px;   /* Height of image */
     text-indent: -9999px;
 }
+.col-md-6{
+    margin:auto;
+  }

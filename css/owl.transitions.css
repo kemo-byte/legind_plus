@@ -2,7 +2,9 @@
  *  Owl Carousel CSS3 Transitions 
  *  v1.3.2
  */
-
+ .col-md-6{
+  margin:auto;
+}
 .owl-origin {
 	-webkit-perspective: 1200px;
 	-webkit-perspective-origin-x : 50%;

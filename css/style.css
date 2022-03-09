@@ -21,6 +21,11 @@
  *	Reset Class Css
  *
  *===================*/
+ :root {
+--main-color: #80d6a3;
+--dark-color: rgba(0, 0, 0, 0.73);
+ }
+
 body {
   line-height: 24px;
   font-size: 14px;
@@ -29,6 +34,8 @@ body {
   color: #444;
   font-family: 'Roboto', sans-serif;
 }
+
+
 
 h1 {
   font-size: 48px;
@@ -78,7 +85,7 @@ a:active {
 }
 .title {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 }
 .title h2 {
   color: #333;
@@ -750,9 +757,12 @@ header .navbar {
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0);
 }
+
+/* Start Contact Form */
 #contact-form {
-  padding: 100px 0;
-  background:#f9f9f9;
+  /* padding: 100px 0; */
+  /* background:#f9f9f9; */
+  min-width: 80%;
 }
 #contact-form form input,
 #contact-form form textarea {
@@ -788,6 +798,15 @@ header .navbar {
   color: #80d6a3;
   border-color: #80d6a3;
 }
+.form-control:focus{
+  border-color: var(--main-color);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+/* #contact-form form input:focus,
+#contact-form form textarea:focus {
+
+} */
+/* End Contact Form */
 #footer-top iframe {
   width: 100%;
   height: 385px;
@@ -1321,3 +1340,47 @@ footer p {
 
 
 
+
+/* Start Ultimate Footer Section */
+.three-columns {overflow:hidden}
+
+.three-columns li {
+    width:50%;
+    font-size:2rem;
+    float:left;
+    padding:5px 0;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .three-columns li:hover {
+    color: var(--main-color);
+  }
+
+.ab{
+  font-size: 14px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #787878;
+}
+.social-list {overflow:hidden;margin:20px 0 10px}
+
+.social-list li {
+    float:left;
+    margin-right:3px;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+}
+
+.social-list li:hover {opacity:1}
+
+
+
+.footer .copyright {
+    background:var(--dark-color);
+    color:#fff;
+    padding:15px 0;
+    margin-top:10px;
+    font-size:18px
+}
+
+/* End Ultimate Footer Section */
