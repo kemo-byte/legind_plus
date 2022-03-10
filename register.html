@@ -26,33 +26,91 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+      <style>
+        body{
+          background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+        }
+
+.btnn {
+	border-radius: 20px;
+	border: 1px solid #80d6a3;
+	background-color: #80d6a3;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+.btnn:active {
+	transform: scale(0.95);
+}
+
+.btnn:focus {
+	outline: none;
+}
+
+.btnn.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+  border-radius: 20px;
+	background-color: #FFFFFF;
+	/* display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; */
+	padding: 30px 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+      </style>
       </head>
 	<body id="top" style="background-color: #eee;font-family: 'Scheherazade New', serif;">
 	
 
 
 <section class="register text-center">
+  <div >
   <h2 style="font-size:50px;font-family: 'Scheherazade New', serif;">تسجيل عضوية جديدة</h2>
-  <h4 style="margin-top: 20px;font-family: 'Scheherazade New', serif;"> يرجى تعبئة البيانات بشكل صحيح لإستكمال عملية التسجيل</h4>  
-<div style="margin-top: 30px">
+  <h4 style="margin-top: 20px;font-family: 'Scheherazade New', serif; "> يرجى تعبئة البيانات بشكل صحيح لإستكمال عملية التسجيل</h4>  
+</div>
+
+  <div style="margin-top: 30px">
   <form action="#" method="post" class="text-right" dir="rtl" style="">
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
       <label for="id">معرف UDID</label>
       <input type="text" name="id" class="form-control input-lg "  placeholder="400234E23432E2345">
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
       <label for="id"> الإسم</label>
       <input type="text" name="id" class="form-control input-lg"  placeholder="ادخل الإسم الكامل">
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
       <label for="id">البريد الإلكتروني </label>
       <input type="text" name="id" class="form-control input-lg"  placeholder="ادخل البريد الإلكتروني">
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
       <label for="id">الدولة</label>
       <!-- <input type="text" name="id" class="form-control input-lg"  placeholder="إختر الدولة  "> -->
       <select class="form-control input-lg"  id="sel1" >
@@ -64,12 +122,12 @@
       </select>
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
       <label for="id">رقم الهاتف</label>
       <input type="text" name="id" class="form-control input-lg"  placeholder="ادخل رقم الهاتف دون رمز الدولة">
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
+    <div class="form-group" style=" ">
 
     <fieldset>
       <legend>قيمة الإشتراك في باقة الأساسية</legend>
@@ -79,7 +137,7 @@
 
     </div>
 
-    <div class="form-group" style="width:50%;margin: auto;">
+    <div class="form-group" style="">
       <label for="id">طريقة الدفع</label>
       <!-- <input type="text" name="id" class="form-control input-lg"  placeholder="إختر طريقة الدفع"> -->
       <select class="form-control input-lg"  id="sel1" >
@@ -91,15 +149,15 @@
       </select>
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
-      <input type="checkbox">
+    <div class="form-group" style=" ">
+      <input type="checkbox" style="width:20px;">
       <label for="id">لقد إطلعت <a style="">على شوط الإشتراك بخدمة تطبيقات بلس</a> واوافق عليها</label>
       
       <!-- <input type="text" name="id" class="form-control input-lg"  placeholder="إختر طريقة الدفع"> -->
     </div>
 
-    <div class="form-group" style="width:50%;margin:20px auto;">
-      <input type="submit" name="submit" class="btn btn-primary" value="تسجيل">
+    <div class="form-group" style=" ">
+      <input type="submit" name="submit" class="btnn" value="تسجيل">
     </div>
   </form>
 </div>
