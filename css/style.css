@@ -22,7 +22,8 @@
  *
  *===================*/
  :root {
---main-color: #80d6a3;
+/* --main-color: #80d6a3; */
+--main-color: rgb(255, 0, 0);
 --dark-color: rgba(0, 0, 0, 0.73);
  }
 
@@ -100,7 +101,8 @@ a:active {
     content: '';
     width: 40px;
     height: 2px;
-    background: #80d6a3;
+    /* background: #80d6a3;  */
+    background:var(--main-color);
     position: absolute;
     top: 12px;
     left: -60px;
@@ -109,7 +111,8 @@ a:active {
     content: '';
     width: 40px;
     height: 2px;
-    background: #80d6a3;
+    /* background: #80d6a3; */
+    background:var(--main-color);
     position: absolute;
     top: 12px;
     right: -60px;
@@ -178,7 +181,8 @@ header .navbar {
   padding: 0;
 }
 .navbar-brand {
-  padding: 0;
+  /* padding: 0; */
+  font-size: 24px;
   height: auto;
 }
 .navbar-toggle {
@@ -208,16 +212,19 @@ header .navbar {
   bottom: 12px;
   width: 0;
   height: 1px;
-  background: #80d6a3;
+  /* background: #80d6a3; */
+  background:var(--main-color);
   transition: 0.3s;
 }
 .menu a:hover {
   background: transparent;
-  color: #80d6a3;
+  /* color: #80d6a3; */
+  color: var(--main-color);
 }
 
 .menu .active a {
-  color: #80d6a3;
+  /* color: #80d6a3; */
+  color: var(--main-color);
 }
 
 .menu .active a:before{
@@ -231,7 +238,7 @@ header .navbar {
    Home page style
    ================= */
 #banner {
-  background: url('../img/banner.jpg');
+  background: url('../img/sa.jpg');
   background-size: cover;
   padding: 250px 0;
   position: relative;
@@ -255,7 +262,8 @@ header .navbar {
   padding-bottom: 25px;
   font-size: 55px;
   font-weight: 100;
-  color: #80d6a3;
+  /* color: #80d6a3; */
+  color: var(--main-color);
 }
 #banner .block h2 {
   font-size: 18px;
@@ -327,7 +335,8 @@ header .navbar {
   line-height: 1;
   font-size: 60px;
   transition: 0.3s;
-  color: #80d6a3;
+  /* color: #80d6a3; */
+  color: var(--main-color);
 }
 #features .feature-block h4 {
   font-size: 20px;
@@ -1522,6 +1531,11 @@ footer p {
   padding: 10px 30px;
   font-size: 1.1em;
   font-family: 'Lora', serif;
+}
+.social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   /* .menu-toggle {

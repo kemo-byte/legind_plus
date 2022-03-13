@@ -137,6 +137,32 @@ $(document).ready(function() {
             scrollSpeed: 1200,
           });
       }())
+
+
+
+
+
+       // Animated Scrolling
+    (function(){
+        var topoffset = 0;
+          $('#socialBtn').click(function() {
+            if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top-topoffset
+                }, 1000);
+                return false;
+              } // target.length
+            } //location hostname
+          }); //on click
+
+          $.scrollUp({
+            scrollDistance: 2000,
+            scrollSpeed: 1200,
+          });
+      }())
  
 
 

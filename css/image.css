@@ -7,6 +7,18 @@
     height: 38px;   /* Height of image */
     text-indent: -9999px;
 }
+#socialBtn {
+    background-image: url(../img/social-bookmarks/social_icon.gif);
+    background-size: cover;
+    top: 92px;
+    right: 20px;
+    /* width: 38px;
+    height: 38px; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
 .col-md-6{
     margin:auto;
   }
