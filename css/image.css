@@ -22,3 +22,15 @@
 .col-md-6{
     margin:auto;
   }
+
+  
+@media only screen and (max-width: 790px) {
+    #socialBtn { 
+        right: 70px;
+    }
+    /* Image style */
+#scrollUp {
+    right: 43px;
+}
+
+}

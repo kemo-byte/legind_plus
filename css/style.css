@@ -1513,7 +1513,9 @@ footer p {
 .footer .footer-content .footer-section h2 {
   color: #f0ecec;
 }
-
+.footer .footer-content .contact-form-div {
+  padding:25px;
+}
 .footer .footer-content .contact-form-div .contact-input {
   margin: 5px auto 5px;
   border: none;
